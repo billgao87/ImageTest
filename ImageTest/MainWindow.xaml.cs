@@ -110,7 +110,7 @@ namespace ImageTest
                 // Show save file dialog box
                 result = saveDlg.ShowDialog();
 
-                // Process save file dialog box result
+                // Process save file dialog box results
                 if (result == true)
                 {
                     // Save document
