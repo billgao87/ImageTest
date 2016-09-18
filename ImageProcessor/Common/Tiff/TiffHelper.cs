@@ -413,8 +413,9 @@ namespace ImageProcessor.Common.Tiff
 
                 byte[] scanline = new byte[tiff.ScanlineSize()];
 
-                for (int i = 0; i < tiff.NumberOfDirectories(); i++)
+                for (short i = 0; i < tiff.NumberOfDirectories(); i++)
                 {
+                    tiff.SetDirectory(i);
                     var doubleByteTiffInfo = new DoubleByteTiffInfo(width, height);
 
                     for (int j = 0; j < height; j++)
